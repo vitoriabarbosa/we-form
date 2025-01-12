@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#content-main-entities {
+  width: 60%;
+}
+
+#entity-list {
+  padding: 5%;
+}
+
+.entities {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.entity {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.entity a {
+  color: var(--color-contrast-primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+span.entity-tag {
+  border: 1px solid var(--color-contrast-secondary);
+  border-radius: 12px;
+  padding: .6rem 3rem;
+  color: var(--color-contrast-secondary);
+}

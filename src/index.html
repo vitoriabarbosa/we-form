@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We Form - Registre sua entidade</title>
+  <!-- Css Links -->
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <!-- Google Fonts Icons Links -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<aside id="content-aside">
+  <img class="image-home" src="assets/img/home-image.svg" alt="imagem capa - We Form">
+  <h1><span>We</span> Form</h1>
+</aside>
+
+<main id="content-main-register">
+  <section class="content-section active" id="entity-register">
+    <header>
+      <h2>Cadastre sua <span>entidade</span> ou acesse dados <span>de parceiras</span></h2>
+    </header>
+    <button id="entity-register-button" class="form-button">Cadastrar entidade</button>
+    <button class="form-button" onclick="location.href='assets/entities.html'">Ver entidades cadastradas</button>
+    <div class="question-new-entity">
+      <p>Sua entidade não se enquadra nos campos de atuação disponíveis?</p>
+      <a id="activity-register-link" class="link">Registrar novo campo de atuação</a>
+    </div>
+  </section>
+
+  <section class="content-section" id="new-entity">
+    <header>
+      <a class="back-to-register">
+        <i class='bx bx-chevron-left' style='color:#ff5678'></i>
+      </a>
+      <h2>Nova <span>entidade</span></h2>
+    </header>
+    <form action="">
+      <label>
+        Nome:
+        <input type="text" id="name" required/>
+      </label>
+      <label>
+        Campo de Atuação:
+        <select id="field-activity-select" required>
+          <option value="" disabled selected>Selecione sua opção</option>
+        </select>
+      </label>
+      <label>
+        Pontos de Coleta:
+        <input type="number" id="collection-point" required/>
+        <i class='bx bxs-plus-circle' style='color:#35e6e9'></i>
+      </label>
+      <button class="form-button">Cadastrar</button>
+    </form>
+  </section>
+
+  <section class="content-section" id="entity-activity">
+    <header>
+      <a class="back-to-register">
+        <i class='bx bx-chevron-left' style='color:#ff5678'></i>
+      </a>
+      <h2>Campo de <span>atuação</span></h2>
+    </header>
+    <form action="">
+      <label>
+        Pesquisar Atuação:
+        <select id="search-activity" required>
+          <option value="" disabled selected>Selecione sua opção</option>
+        </select>
+      </label>
+      <div class="question-new-activity">
+        <p>ou</p>
+        <a class="link-button" href="#field-activity-input">Cadastre novo campo de atuação</a>
+      </div>
+      <label>
+        Campo de Atuação:
+        <input type="number" id="field-activity-input" name="field-activity-input" required/>
+      </label>
+      <button class="form-button">Cadastrar</button>
+    </form>
+  </section>
+</main>
+</body>
+</html>
