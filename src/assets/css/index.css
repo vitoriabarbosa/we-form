@@ -16,6 +16,10 @@
   --border-button: 2px solid #C0EBF4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-size: 5rem;
   font-weight: 600;
@@ -37,6 +41,7 @@ span {
 i.bx {
   font-size: 3rem;
   cursor: pointer;
+  color: var(--color-contrast-primary);
 }
 
 i.bx-chevron-left:hover {
@@ -45,7 +50,7 @@ i.bx-chevron-left:hover {
 }
 
 i.bx.bxs-plus-circle {
-  color: var(--color-contrast-primary);
+  color: var(--color-contrast-secondary);
   position: absolute;
   right: -9%;
   top: 45%;
